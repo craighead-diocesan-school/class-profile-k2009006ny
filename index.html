@@ -21,13 +21,11 @@
         <a href="Lucy.html">Lucy</a>
     </nav>
     <main>
-        <img src="students-wroking.jpg" alt="photo of students-working">
-
         <h3>Our class of high-performing digital technology students likes to get stuck into any project that takes
             their fancy. The girls are in their final year at secondary school and are all working on personal projects
             that interest them. </h3>
 
-        <div claa="introduce">
+        <div class="introduce">
             <img src="Ruòxī.jpg" alt="Ruòxī">    
             <p>Ruòxī</p>
             <ul>Ruòxī a boisterous student who likes to get stuck in with practical work.<br> She’s worked on:</br>
@@ -106,17 +104,19 @@
     }
 nav{
     grid-area: n;
+    font-size: large;
+    text-align: center;
 }
 main{
     grid-area: m;
 }
     body {
         display: grid;
-        grid: " h   h   h  " 2em 
-              " n   m   m  " 4em
+        grid: " h   h   h  " 10em 
+              " n   .   .  " 1em
               " m   m   m  " auto
-              " m   m   f  " 1em
-             / 1fr 2fr 1fr;
+              " f   f   f  " auto
+             / 1fr 1fr 1fr;
         background-color: oldlace;
         flex: space-around;
     }
@@ -134,6 +134,7 @@ h3{
     p{
         font-size: large;
     }
+
     footer{
         grid-area: f;
     }
