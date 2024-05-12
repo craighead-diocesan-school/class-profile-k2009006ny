@@ -27,19 +27,15 @@
             their fancy. The girls are in their final year at secondary school and are all working on personal projects
             that interest them. </h3>
 
-        <img src="Ruòxī.jpg" alt="Ruòxī">
-        <img src="Priya.jpg" alt="Priya">
-        <img src="Aniyha.jpg" alt="Aniyha">
-        <img src="Kaiara.jpg" alt="Kaiara">
-        <img src="Lucy.jpg" alt="Lucy">
-
         <div claa="introduce">
+            <img src="Ruòxī.jpg" alt="Ruòxī">    
             <p>Ruòxī</p>
             <ul>Ruòxī a boisterous student who likes to get stuck in with practical work.<br> She’s worked on:</br>
                 <li>Electric cars 🚘</li>
                 <li>Robotic arms 🤖 </li>
                 <li> Sports training systems⛹</li>
             </ul>
+            <img src="Priya.jpg" alt="Priya">
             <p>Priya</p>
             <ul>
                 Priya loves working with people and visual systems. <br> She’s worked on:</br>
@@ -47,13 +43,14 @@
                 <li>Self-driving systems</li>
                 <li>Animal classification apps</li>
             </ul>
-
+            <img src="Aniyha.jpg" alt="Aniyha">
             <p>Aniyah</p>
             <ul> Aniyah is a mathematician through-and-through. <br> She’s worked on:</br>
                 <li>Algorithm classification</li>
                 <li>Prime number factorisation</li>
                 <li>Computer graphics</li>
             </ul>
+            <img src="Kaiara.jpg" alt="Kaiara">
 
             <p>Kaiara</p>
             <ul> Kaiara is a driven entrepreneur and drives app development forward. <br> She’s worked on:</br>
@@ -61,7 +58,8 @@
                 <li>Payment handling software</li>
                 <li>Stock management apps</li>
             </ul>
-            <p>Luch</p>
+            <img src="Lucy.jpg" alt="Lucy">
+            <p>Lucy</p>
             <ul>Lucy loves data and getting everything organised. <br> She’s worked on:</br>
                 <li>Course choice prediction systems</li>
                 <li>Student information systems</li>
@@ -93,6 +91,7 @@
 <style>
     header {
         background-color: orange;
+        grid: h;
     }
 
     h1 {
@@ -105,20 +104,28 @@
         text-align: right;
         font-size: x-large;
     }
-
+nav{
+    grid-area: n;
+}
+main{
+    grid-area: m;
+}
     body {
         display: grid;
-        grid: " h   .   .  " 2em 
-              " m   n   m  " 4em
+        grid: " h   h   h  " 2em 
+              " n   m   m  " 4em
               " m   m   m  " auto
               " m   m   f  " 1em
              / 1fr 2fr 1fr;
         background-color: oldlace;
         flex: space-around;
     }
+
 h3{
     background-image: url(https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe369a78b-50d3-4691-8b0d-2c678205857d_7360x4912.jpeg);
     width: 100%;
+    height: 300px; 
+    background-size: cover;
 }
     .introduce {
         background-color: lightskyblue;
@@ -126,5 +133,8 @@ h3{
 
     p{
         font-size: large;
+    }
+    footer{
+        grid-area: f;
     }
     </style>
