@@ -21,6 +21,7 @@
         <a href="Lucy.html">Lucy</a>
     </nav>
     <main>
+        <img src="students-working.jpg" class="photo of students-working">
         <h3>Our class of high-performing digital technology students likes to get stuck into any project that takes
             their fancy. The girls are in their final year at secondary school and are all working on personal projects
             that interest them. </h3>
@@ -112,24 +113,26 @@ main{
 }
     body {
         display: grid;
-        grid: " h  " 10em 
-              " n  " 2em
-              " m  " auto
-              " f  " auto
-             / 10fr;
+        grid: " h    h   " 10em 
+              " n    n   " 2em
+              " m    m   " auto
+              " f    f   " auto
+              / 10fr 1fr ;
  background-color: oldlace;
         flex: space-around;
     }
 
 h3{
-    background-image: url(https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe369a78b-50d3-4691-8b0d-2c678205857d_7360x4912.jpeg);
-    opacity:0.8;
-width: 100%;
-    height: 300px; 
-    object-position: bottom;
-    background-size: cover;
+    background-image: src="students-working.jpg";
+  background-position: 0% 50%;
+
 }
-    .introduce {
+.students-working.jpg{
+    width: 100px;
+  height: 100px;
+  transform: scale(1, 0.5);}
+  
+  .introduce {
         background-color: lightskyblue;
     }
 
